@@ -1,0 +1,107 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color:  hsl(0, 0%, 98%);  
+}
+
+h1 {
+    color: hsl(234, 12%, 34%);
+}
+
+.headingFirst {
+    font-weight: 200;
+}
+
+.Heading {
+  
+    width: 75%;
+    padding: 3% 17%;
+    margin:auto;
+    text-align: center;
+    font-weight: 600;
+}
+
+p {
+    font-size: 0.75rem;
+    color: hsl(229, 6%, 66%);
+}
+
+img {
+    position: relative;
+    top: 5px;
+    left: 225px;
+}
+
+#features {
+    padding: 2% 15%;  
+}
+
+.row {
+    display: flex;
+    align-items: center;
+  
+}
+
+.Supervisor {
+    
+    height: 225px;
+    width: 100%;
+    background-color:#fff;
+    text-align: left;
+    border-radius: 4px;
+    border-top: hsl(180, 62%, 55%) solid 4px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+
+}
+
+.teamKarma {
+    height: 465px;
+    width: 100%;
+}
+
+.Builder {
+    height: 225px;
+    width: 100%;
+    background-color: #fff;
+    text-align: left;
+    border-radius: 4px;
+    border-top: hsl(0, 78%, 62%) solid 4px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+
+}
+
+.Karma {
+    height: 225px;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 10px;
+    text-align: left;
+    border-radius: 4px;
+    border-top: hsl(34, 97%, 64%) solid 4px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    
+}
+
+.Calculator {
+    height: 220px;
+    width: 100%;
+    background-color: #fff;
+    text-align: left;
+    border-radius: 4px;
+    border-top: hsl(212, 86%, 64%) solid 4px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+
+    .attribution { 
+        font-size: 11px; text-align: center; 
+    }
+
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
