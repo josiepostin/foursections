@@ -1,107 +1,146 @@
+/*My neater and clearer solution for this challenge Version 2 May 7, 2020 at 3:37 AM*/
+
 body {
-    font-family: "Poppins", sans-serif;
-    background-color:  hsl(0, 0%, 98%);  
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 98%);  
 }
+
 
 h1 {
-    color: hsl(234, 12%, 34%);
-}
-
-.headingFirst {
-    font-weight: 200;
-}
-
-.Heading {
-  
-    width: 75%;
-    padding: 3% 17%;
-    margin:auto;
-    text-align: center;
+    line-height: 45px;
     font-weight: 600;
-}
-
-p {
-    font-size: 0.75rem;
-    color: hsl(229, 6%, 66%);
+    font-size: 35px;
 }
 
 img {
     position: relative;
-    top: 5px;
-    left: 225px;
+    left: 185px;
+    top: 20px;
 }
 
-#features {
-    padding: 2% 15%;  
+/*This my wrapper - Grid CSS property*/
+.features {
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 230px;
+    column-gap: 25px;
+    row-gap: 2em;
+    padding-bottom: 50px;
+    margin-top: 50px 
 }
 
-.row {
-    display: flex;
-    align-items: center;
+.Heading { 
+    grid-column-start: 2; 
+    grid-column-end: 5; 
+    grid-row-start: 1; 
+    grid-row-end: 2; 
+    font-family: "Poppins";
+    text-align: center;
+  }
+
+  .Heading p {
+    padding-left: 25%;
+    padding-right: 25%;
+    color: hsl(229, 6%, 66%);
+  }
+
+
+.firstHeading {
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+   
+}
+
+/* update to my previous solution - added shadow effect*/
+.featuredBox {
+    background-color: #fff;
+    box-shadow: 5px 10px 5px hsl(229, 6%, 80%); 
+    height: 225px;
+    padding-left: 15px;
+    border-radius: 5px;
+    border-top: 5px solid;
+}
+
+.featuredBox p {
+    font-size: 0.80rem;
+    color: hsl(229, 6%, 66%);
+    font-weight: 400;
+}
+
+.supervisor {
+    grid-column: 2; 
+    grid-row: 3; 
+    position: relative;  /*very important*/
+    bottom: 50%;
+    border-color: hsl(180, 62%, 55%);
+   
+}
+.teamBuilder {
+    
+    grid-column: 3; 
+    grid-row: 2; 
+    border-color: hsl(0, 78%, 62%);
   
 }
 
-.Supervisor {
+.karma {
+    grid-column: 3;
+    grid-row: 3;
+    border-color: hsl(34, 97%, 64%);
     
-    height: 225px;
-    width: 100%;
-    background-color:#fff;
-    text-align: left;
-    border-radius: 4px;
-    border-top: hsl(180, 62%, 55%) solid 4px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-top: 15px;
-
-}
-
-.teamKarma {
-    height: 465px;
-    width: 100%;
-}
-
-.Builder {
-    height: 225px;
-    width: 100%;
-    background-color: #fff;
-    text-align: left;
-    border-radius: 4px;
-    border-top: hsl(0, 78%, 62%) solid 4px;
-    margin-bottom: 15px;
-    padding-top: 15px;
-
-}
-
-.Karma {
-    height: 225px;
-    width: 100%;
-    background-color: #fff;
-    margin-top: 10px;
-    text-align: left;
-    border-radius: 4px;
-    border-top: hsl(34, 97%, 64%) solid 4px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-top: 15px;
     
 }
 
-.Calculator {
-    height: 220px;
-    width: 100%;
-    background-color: #fff;
-    text-align: left;
-    border-radius: 4px;
-    border-top: hsl(212, 86%, 64%) solid 4px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-top: 15px;
+.calculator {
+    grid-column: 4;
+    grid-row: 3;
+    position: relative;
+    bottom: 50%;
+    border-color: hsl(212, 86%, 64%)
+    
 }
+
+
 
     .attribution { 
-        font-size: 11px; text-align: center; 
-    }
-
+        font-size: 11px; 
+        text-align: center;
+     }
     .attribution a { 
         color: hsl(228, 45%, 44%); 
     }
+  
+    /*Code for smaller screens*/
+    @media only screen and (max-width: 1440px) {
+        .features {
+          display: inline-block;
+          grid-template-columns: 1fr;
+          row-gap: 5em;
+          padding: 1em;
+        }
+
+        .featuredBox {
+            height: 225px;
+            width: 300px;
+            margin: auto;
+            row-gap: 5em;
+            margin-bottom: 25px;
+          }
+
+        .Heading p {
+            text-align: center;
+            grid-template-columns: 1fr;
+            padding-left: 15%;
+            padding-right: 15%;
+
+        }
+        
+        img {
+            position: relative;
+            left: 200px;
+        }
+
+
+      }
