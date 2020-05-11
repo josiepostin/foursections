@@ -20,6 +20,7 @@ img {
 }
 
 /*This my wrapper - Grid CSS property*/
+
 .features {
     
     display: grid;
@@ -54,6 +55,7 @@ img {
 }
 
 /* update to my previous solution - added shadow effect*/
+
 .featuredBox {
     background-color: #fff;
     box-shadow: 5px 10px 5px hsl(229, 6%, 80%); 
@@ -111,9 +113,11 @@ img {
     .attribution a { 
         color: hsl(228, 45%, 44%); 
     }
+
+
   
-    /*Code for smaller screens*/
-    @media (max-width: 1440px) and (min-width: 375px){
+   /*  Code for smaller screens */
+    @media (min-width: 375px) {  
         .features {
           display: inline-block;
           grid-template-columns: 1fr;
@@ -143,4 +147,4 @@ img {
         }
 
 
-      }
+      } 
