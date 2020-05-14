@@ -15,7 +15,7 @@ h1 {
 
 img {
     position: relative;
-    left: 185px;
+    left: 160px;
     top: 20px;
 }
 
@@ -117,9 +117,10 @@ img {
 
   
    /*  Code for smaller screens */
-    @media (max-width: 1440px) {  
+   
+   @media ONLY screen and (max-width: 375px) {  
         .features {
-          display: inline-block;
+          display: inline;
           grid-template-columns: 1fr;
           row-gap: 5em;
           padding: 1em;
@@ -128,7 +129,7 @@ img {
         .featuredBox {
             height: 225px;
             width: 300px;
-            margin: auto;
+            margin: 0 auto;
             row-gap: 5em;
             margin-bottom: 25px;
           }
@@ -148,3 +149,4 @@ img {
 
 
       } 
+      
